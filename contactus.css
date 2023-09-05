@@ -1,0 +1,534 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: black;
+}
+#navbar{
+    background-color: rgb(0, 0, 0);
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#navbar #logo{
+    font-size: 1.8rem;
+    margin: 14px;
+    padding: 14px;
+    font-weight: bold;
+    font-size: 2.1rem;
+    cursor: pointer;
+}
+#navbar #logo span{
+    color: orange;
+}
+#navbar ul{
+    display: flex;
+    padding-left: 80px;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 14px;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+    transform: scale(1.15);
+    color: orange;
+    transition: 0.4s;
+}
+
+#main{
+    width: 100%;
+    height: 61vh;
+    border: 2px solid white;
+    margin-top: 1%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#main .heading{
+    width: 60%;
+    height: 25%;
+    /* border: 2px solid white;     */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+#main .heading .mhead{
+    font-size: 2.6rem;
+}
+#main .heading .mhead span{
+    color: orange;
+}
+#main .heading .subh{
+    font-size: 1rem;
+    padding: 0.7%;
+}
+#main .heading .subh span{
+    color: orange;
+}
+
+
+
+
+#main .content{
+    width: 50%;
+    height: 71%;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+#main input{
+    height: 1.9rem;
+    padding: 2px;
+    margin-top: 2%;
+    width: 100%;    
+    border: 2px solid orange;
+    border-radius: 5px;
+}
+
+#main .name{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#main .name input{
+    width: 47%;    
+}
+#main .email input{
+    width: 98%;
+}
+#main .add input{
+    width: 98%;
+}
+#main .phone input{
+    width: 98%;
+}
+#main .content form button{
+    width: 100%;
+    background-color: orange;
+}
+#main ::placeholder{
+    padding: 12px;
+}
+
+#main button{
+    height: 3rem;
+    margin-top: 2%;
+    padding: 1%;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    color: white;
+}
+#main button:hover{
+    transform: scaleX(1.01);
+    cursor: pointer;
+    border-color: white;
+    border: 2px solid white;
+}
+
+
+#footer{
+    width: 100%;
+    height: 300px;
+    margin-top: 1%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#footer .box1{
+    width: 20%;
+    height: 90%;
+    /* border: 2px solid white; */
+}
+#footer .box1 .logo{
+    width: 100%;
+    height: 25%;
+    /* border: 2px solid white; */
+    color: white;
+    font-size: 2rem;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+}
+#footer .box1 .logo span{
+    color: orange;
+}
+#footer .box1 .content{
+    width: 100%;
+    height: 45%;
+    /* border: 2px solid white; */
+    color: white;
+    padding: 4px;
+}
+#footer .box1 .links{
+    width: 60%;
+    height: 20%;
+    color: orange;
+    display: flex;
+    /* border: 2px solid white; */
+    justify-content: space-between;
+    cursor: pointer;
+    margin-top: 5%;
+}
+#footer .box1 .heading{
+    width: 100%;
+    height: 20%;
+    color: white;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+}
+#footer .box1 .heading span{
+    color: orange;
+}
+#footer .box1 .details{
+    width: 100%;
+    height: 70%;
+    color: white;
+    /* border: 2px solid white; */
+}
+#footer .box1 .details ul{
+    list-style: none;
+}
+#footer .box1 .details li{
+    margin: 4px;
+    padding: 2px;
+}
+#footer .box1 .btn1{
+    width: 85px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    color: white;
+    border: 2px solid orange;
+    border-radius: 10px;
+    margin-left: 2%;
+    cursor: pointer;
+    margin-top: 5%;
+}
+#footer .box1 .btn1:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+    border: 1px solid white;
+}
+
+.menu {
+    --s: 35px; /* control the size */
+    --c: white; /* the color */
+    
+    height: var(--s);
+    aspect-ratio: 1;
+    border: none;
+    padding: 0;
+    border-inline: calc(var(--s)/2) solid #0000; 
+    box-sizing: content-box;
+    --_g1: linear-gradient(var(--c) 20%,#0000 0 80%,var(--c) 0) 
+           no-repeat content-box border-box;
+    --_g2: radial-gradient(circle closest-side at 50% 12.5%,var(--c) 95%,#0000) 
+           repeat-y content-box border-box;
+    background: 
+      var(--_g2) left  var(--_p,0px) top,
+      var(--_g1) left  calc(var(--s)/10 + var(--_p,0px)) top,
+      var(--_g2) right var(--_p,0px) top,
+      var(--_g1) right calc(var(--s)/10 + var(--_p,0px)) top;
+    background-size: 
+      20% 80%,
+      40% 100%;
+    position: relative;
+    clip-path: inset(0 25%);
+    /* -webkit-mask: linear-gradient(90deg,#0000,#000 25% 75%,#0000); */
+    cursor: pointer;
+    transition: 
+      background-position .3s var(--_s,.3s), 
+      clip-path 0s var(--_s,.6s);
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+  }
+  .menu:before,
+  .menu:after {
+    content:"";
+    position: absolute;
+    border-radius: var(--s);
+    inset: 40% 0;
+    background: var(--c);
+    transition: transform .3s calc(.3s - var(--_s,.3s));
+  }
+  
+  .menu:checked {
+    clip-path: inset(0);
+    --_p: calc(-1*var(--s));
+    --_s: 0s;
+  }
+  .menu:checked:before {
+    transform: rotate(45deg);
+  }
+  .menu:checked:after {
+    transform: rotate(-45deg);
+  }
+  .menu:focus-visible {
+    clip-path: none;
+    /* -webkit-mask: none; */
+    border: none;
+    outline: 2px solid var(--c);
+    outline-offset: 5px;
+  }
+  
+.hamburger{
+    position: absolute;
+    right: 1%;
+    top:20px;
+    display: none;
+}
+
+
+@media (max-width: 1140px) {
+    #navbar{
+        flex-direction: column;
+        transition: all 1.0 ease-out;
+    }
+    #navbar ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #navbar #logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 20px;
+        MARGIN-TOP: -13PX;
+        MARGIN-BOTTOM: -32PX;
+        MARGIN-LEFT: 75PX;
+    }
+    .hamburger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 80px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }  
+    #footer .box1{
+        width: 24%;
+        height: 95%;
+    }
+    #footer .box1 .logo{
+        height: 20%;
+        font-size: 1.5rem;
+        margin-top: 1%;
+    }
+    #footer .box1 .content{
+        height: 60%;
+        color: white;
+        padding: 2px;
+    }
+    #footer .box1 .links{
+        width: 70%;
+        height: 20%;
+        color: orange;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-top: 7%;
+    }
+    #footer .box1 .btn1{
+        width: 70px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .h-nav-resp{
+        height: 54px;
+    }
+    .hamburger{
+        right: 1%;
+        top:10px;
+    }
+    #main .heading .mhead {
+        font-size: 2rem;
+    }
+    #main .heading .subh {
+        font-size: 0.9rem;
+    }
+    #main .content {
+        width: 60%;
+        height: 78%;
+    }
+    #main input{
+        height: 1.7rem;
+        padding: 2px;
+        margin-top: 2%;
+        width: 100%;    
+        border: 2px solid orange;
+        border-radius: 5px;
+    }
+    #main button {
+        font-size: 1.2rem;
+    }
+
+    #footer .box1 .logo{
+        font-size: 1.1rem;
+        height: 14%;
+    }
+    #footer .box1 .content{
+        width: 98%;
+        display: flex;
+        align-items: center;
+        font-size: 0.85rem;
+        padding: 0px;
+        height: 72%;
+    }
+    #footer .box1 .links {
+        width: 90%;
+        height: 8%;
+        color: orange;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-top: 1%;
+    }
+    #footer .box1 .heading h1{
+        font-size: 1.3rem;
+    }
+    #footer .box1 .details{
+        font-size: 0.85rem;
+    }
+    #footer .box1 .btn1 {
+        width: 82px;
+        height: 31px;
+        
+    margin-top: -4%;
+    }
+}
+@media (max-width: 500px) {
+
+    #navbar #logo {
+        MARGIN-LEFT: 20PX;
+        font-size: 1.8rem;
+    }
+    #navbar ul {
+        display: flex;
+        padding-left: 0px;
+    }
+    #navbar ul li {
+        font-size: 1.1rem;
+    }
+
+    .h-nav-resp {
+        height: 54px;
+    }
+
+    .hamburger {
+        right: 1%;
+        top: 10px;
+    }
+
+    #main {
+        height: 360px;
+    }
+    #main .heading {
+        width: 98%;
+        height: 25%;
+    }
+
+    #main .content {
+        width: 75%;
+        height: 90%;
+    }
+
+
+    #footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 700px;
+        width: 100%;
+    }
+
+
+
+    #footer .box1{
+        height: 40%;
+        width: 80%;
+    }
+    #footer .box1 .logo {
+        font-size: 1.3rem;
+        height: 14%;
+    }
+
+    #footer .box1 .content {
+        width: 98%;
+        display: flex;
+        margin-top: 5px;
+        align-items: center;
+        font-size: 0.85rem;
+        padding: 2px;
+        height: 66%;
+    }
+
+    #footer .box1 .links {
+        width: 47%;
+    height: 17%;
+    margin-top: 0%;
+    }
+
+    #footer .box1 .heading h1 {
+        font-size: 1.3rem;
+    }
+
+    #footer .box1 .details {
+        margin-top: 10px;
+        font-size: 0.85rem;
+    }
+
+    #footer .box1 .btn1 {
+        width: 80px;
+        height: 30px;
+        margin-top: -1%;
+        margin-left: 0%;
+    }
+
+    #footer .box2{
+        height: 23%;
+    }
+    #footer .box3{
+        height: 14%;
+    }
+    #footer .box4{
+        height: 9%;
+    }
+    #footer .box5 {
+        height: 23%;
+    }
+
+}
